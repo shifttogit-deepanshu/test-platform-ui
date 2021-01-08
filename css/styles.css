@@ -129,7 +129,7 @@ li{
 }
 
 .input-btn:hover{
-    background-color:var(--theme-border-color) ;
+    background-color:rgba(34, 49, 63, 0.9) ;
     transition-duration:0.5s;
     transform: translateY(-5px);
     box-shadow: 0px 2px 5px grey;
@@ -147,5 +147,5 @@ li > div{
     font-size:15px;
 }
 li > div:hover {
-    background-color:rgba(34, 49, 63, 0.2)
+    box-shadow: 0px 0px 4px black;
 }
