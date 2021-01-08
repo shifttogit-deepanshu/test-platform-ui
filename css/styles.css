@@ -1,7 +1,7 @@
 :root{
-    --theme-color:rgba(34, 49, 63, 0.8);
-    --theme-border-color:rgba(34, 49, 63, 1);
-    --theme-form-color:rgba(34, 49, 63, 0.1);
+    --theme-color:rgba(1, 50, 67, 0.7);
+    --theme-border-color:rgba(1, 50, 67, 1);
+    --theme-form-color:rgba(1, 50, 67, 0.1);
 }
 
 body{
@@ -79,7 +79,7 @@ body{
 form{
 
     border-bottom:20px solid var(--theme-color);
-    background-color:  rgba(34, 49, 63, 0.1);
+    background-color:  rgba(1, 50, 67, 0.1);
     
 }
 ol{
@@ -129,7 +129,7 @@ li{
 }
 
 .input-btn:hover{
-    background-color:rgba(34, 49, 63, 0.9) ;
+    background-color:rgba(1, 50, 67, 0.9) ;
     transition-duration:0.5s;
     transform: translateY(-5px);
     box-shadow: 0px 2px 5px grey;
@@ -142,7 +142,7 @@ li > div{
     border:0px solid black;
     margin:6px 0px 6px 0px;
     padding:20px 0px 20px 0px;
-    background-color:rgba(34, 49, 63, 0.1) ;
+    background-color:rgba(1, 50, 67, 0.2) ;
     border-radius:10px;
     font-size:15px;
 }
