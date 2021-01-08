@@ -1,3 +1,9 @@
+:root{
+    --theme-color:rgba(34, 49, 63, 0.8);
+    --theme-border-color:rgba(34, 49, 63, 1);
+    --theme-form-color:rgba(34, 49, 63, 0.1);
+}
+
 body{
     background-image: url(https://paxcura.com/wp-content/uploads/2020/08/diagnostic-lab-content-gradient-bg.svg);
     padding:0px;
@@ -41,7 +47,7 @@ body{
     padding:10px;
     margin-bottom:100px;
     box-sizing: border-box;
-    background-color: rgba(34, 49, 63, 0.8);
+    background-color: var(--theme-color);
     border-bottom:7px solid black;
     box-shadow:0px 2px 30px grey;
 }
@@ -60,20 +66,19 @@ body{
 }
 
 .instructions{
-    background-color:rgba(34, 49, 63, 0.8); 
+    background-color:var(--theme-color); 
     padding:50px;
     color:white;
     font-size: 16px;
     font-weight: 100;
     letter-spacing:2px;
     line-height: 30px;
-    border-top:10px solid rgba(34, 49, 63, 1);
-    border-bottom:10px solid rgba(34, 49, 63, 1);
+    border-top:10px solid var(--theme-border-color);
 }
 
 form{
 
-    border-bottom:20px solid rgba(34, 49, 63, 0.8);
+    border-bottom:20px solid var(--theme-color);
     background-color:  rgba(34, 49, 63, 0.1);
     
 }
@@ -115,10 +120,22 @@ li{
 
 .input-btn{
     padding:20px 60px 20px 60px;
-    background-color: rgba(34, 49, 63, 0.8);
+    background-color: var(--theme-color);
     color:white;
     font-size:18px;
     margin:40px;
     border:none;
     border-radius: 10px;
 }
+
+.input-btn:hover{
+    background-color:var(--theme-border-color) ;
+    transition-duration:0.5s;
+    transform: translateY(-5px);
+    box-shadow: 0px 2px 5px grey;
+}
+
+li{
+    font-size:14px;
+}
+
