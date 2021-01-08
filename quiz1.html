@@ -34,8 +34,8 @@
                 <li>
                     <h3>I can visualize a situation from another person's point of view. </h3>
                     
-                    <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                    <div class="option">
+                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A"/>
                         <label for="question-1-answers-A">A) Strongly Agree </label>
                     </div>
                     
@@ -291,7 +291,27 @@
         </form>
     </div>
     </div>
-	</div>
+    </div>
+    
+    <script>
+        document.querySelectorAll('li div').forEach((element)=>{
+            element.addEventListener('click',()=>{
+                element.querySelector('input').checked=true
+                document.querySelectorAll('li div').forEach((check)=>{
+                    if(check.querySelector('input').checked==true){
+                        check.style.backgroundColor="rgba(34, 49, 63, 0.5)"
+                        check.style.color="white"
+                        check.style.fontWeight=900
+                    }
+                    else{
+                        check.style.backgroundColor="rgba(34, 49, 63, 0.1)"
+                        check.style.color="black"
+                        check.style.fontWeight=300
+                    }
+                })
+            })
+            })
+    </script>
 
 </body>
 </html>

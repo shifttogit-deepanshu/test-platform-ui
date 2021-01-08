@@ -138,4 +138,14 @@ li{
 li{
     font-size:14px;
 }
-
+li > div{
+    border:0px solid black;
+    margin:6px 0px 6px 0px;
+    padding:20px 0px 20px 0px;
+    background-color:rgba(34, 49, 63, 0.1) ;
+    border-radius:10px;
+    font-size:15px;
+}
+li > div:hover {
+    background-color:rgba(34, 49, 63, 0.2)
+}
