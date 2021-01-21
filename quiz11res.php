@@ -48,7 +48,7 @@ echo "<!DOCTYPE html>
  <head>
  	<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />
  	<title>PYSCHOMETRIC PROFILING GRADING</title>
- 	<meta http-equiv=\"refresh\" content=\"0;URL=quiz2.php\" />
+ 	<meta http-equiv=\"refresh\" content=\"0;URL=quiz12.php\" />
  </head>
  <body>
  </body>
