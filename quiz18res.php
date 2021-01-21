@@ -1,14 +1,11 @@
 <?php
 
 
- 		$answer1 = $_POST["question-1-answers"];
- 		$answer2 = $_POST['question-2-answers'];
-        $answer3 = $_POST['question-3-answers'];
-        $answer4 = $_POST['question-4-answers'];
-        $answer5 = $_POST['question-5-answers'];
-        $answer6 = $_POST['question-6-answers'];
-        $answer7 = $_POST['question-7-answers'];
-        $answer8 = $_POST['question-8-answers'];
+
+        $answer5 = $_POST['question-135-answers'];
+        $answer6 = $_POST['question-136-answers'];
+        $answer7 = $_POST['question-137-answers'];
+        $answer8 = $_POST['question-138-answers'];
 
    session_start();
 
@@ -20,17 +17,10 @@
         require("connect.php");
 
 
-
-
-
-mysqli_query($connection, "UPDATE $username SET response='$answer1' WHERE question=1");
-mysqli_query($connection, "UPDATE $username SET response='$answer2' WHERE question=2");
-mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE question=3");
-mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE question=4");
-mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE question=5");
-mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE question=6");
-mysqli_query($connection, "UPDATE $username SET response='$answer7' WHERE question=7");
-mysqli_query($connection, "UPDATE $username SET response='$answer8' WHERE question=8");
+mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE question=135");
+mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE question=136");
+mysqli_query($connection, "UPDATE $username SET response='$answer7' WHERE question=137");
+mysqli_query($connection, "UPDATE $username SET response='$answer8' WHERE question=138");
 
     	$totalScore = 0;
     

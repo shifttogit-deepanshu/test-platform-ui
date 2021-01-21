@@ -9,9 +9,9 @@
         $answer6 = $_POST['question-106-answers'];
         $answer7 = $_POST['question-107-answers'];
         $answer8 = $_POST['question-108-answers'];
-        $answer6 = $_POST['question-109-answers'];
-        $answer7 = $_POST['question-110-answers'];
-        $answer8 = $_POST['question-111-answers'];
+        $answer9 = $_POST['question-109-answers'];
+        $answer10 = $_POST['question-110-answers'];
+        $answer11 = $_POST['question-111-answers'];
 
    session_start();
 
@@ -34,9 +34,9 @@ mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE questi
 mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE question=106");
 mysqli_query($connection, "UPDATE $username SET response='$answer7' WHERE question=107");
 mysqli_query($connection, "UPDATE $username SET response='$answer8' WHERE question=108");
-mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE question=109");
-mysqli_query($connection, "UPDATE $username SET response='$answer7' WHERE question=110");
-mysqli_query($connection, "UPDATE $username SET response='$answer8' WHERE question=111");
+mysqli_query($connection, "UPDATE $username SET response='$answer9' WHERE question=109");
+mysqli_query($connection, "UPDATE $username SET response='$answer10' WHERE question=110");
+mysqli_query($connection, "UPDATE $username SET response='$answer11' WHERE question=111");
 
     	$totalScore = 0;
     
