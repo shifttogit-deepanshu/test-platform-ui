@@ -1,16 +1,48 @@
+<?php
+
+session_start();
+
+$username = $_SESSION['login_user'];
+
+if(!$username){
+    header("location:index.php");
+}
+
+echo "Username: $username";
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>MANAV RACHNA PSYCHOMETRIC QUIZ TEST</title>
-	<!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div id="page-wrap">
-		<h1>MANAV RACHNA PSYCHOMETRIC PROFILING TEST</h1>
-        <h4>General Instructions: Answer the following questions. </h4>
-		
-		<form action="mcq17res.php" method="POST" id="mcq17">
+
+	<div class="page-wrap">
+        <div class="top-bar">
+        <div class="container">
+            <div class="header">
+                <div class="logo"><image src="assets/paxcura.png"  class="logo-img" alt="paxcura logo"/></div>
+                <div class="title"><h1>MANAV RACHNA PSYCHOMETRIC PROFILING TEST</h1></div>
+            </div>
+        </div>
+        </div>
+
+        <div class='container'>
+        <div class="shadow-box">
+        <div class="instructions">
+        <p>General Instructions: This questionnaire measures your interests and suitability for the various jobs and determines which area of work you are most appropriate for and will perform optimally in. Each segment has a few questions and you are requested to mark the option which you feel applies to you in the best way. Please don’t take too long to answer any question. Please respond to all the questions. There are no right or wrong answer. </p>
+    
+        <h4>Please read each items carefully and indicate the degree to which you agree with each of the statements.
+        </h4>
+        </div>
+		<form action="quiz18.html" method="POST" id="mcq1">
             <ol start="128">
                 <!-- Numerical skills: Numerical ability reasoning q128 to q130 -->
                 <li>
@@ -195,8 +227,33 @@
                     </div>
                 </li>
              </ol>
-            <input type="submit" value="Next" />
-		</form>
-	</div>
+            <div class="btn-container">
+            <input type="submit" value="Next" class="input-btn"/>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+    
+    <script>
+        document.querySelectorAll('li div').forEach((element)=>{
+            element.addEventListener('click',()=>{
+                element.querySelector('input').checked=true
+                document.querySelectorAll('li div').forEach((check)=>{
+                    if(check.querySelector('input').checked==true){
+                        check.style.backgroundColor="rgba(1, 50, 67, 0.5)"
+                        check.style.color="white"
+                        check.style.fontWeight=900
+                    }
+                    else{
+                        check.style.backgroundColor="rgba(1, 50, 67, 0.2)"
+                        check.style.color="black"
+                        check.style.fontWeight=300
+                    }
+                })
+            })
+            })
+    </script>
+
 </body>
 </html>

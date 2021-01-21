@@ -1,3 +1,18 @@
+<?php
+
+session_start();
+
+$username = $_SESSION['login_user'];
+
+if(!$username){
+    header("location:index.php");
+}
+
+echo "Username: $username";
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -319,7 +334,7 @@
         </form>
     </div>
     </div>
-    </div>
+    </div>s
     
     <script>
         document.querySelectorAll('li div').forEach((element)=>{
