@@ -42,7 +42,7 @@ echo "Username: $username";
         <h4>Please read each items carefully and indicate the degree to which you agree with each of the statements.
         </h4>
         </div>
-		<form action="quiz11.html" method="POST" id="mcq1">
+		<form action="quiz10res.php" method="POST" id="mcq1">
             <ol start="65">
                 <!-- Verbal Communication Skills Q65 to Q70 -->
                 <li>
