@@ -42,7 +42,7 @@ echo "Username: $username";
         <h4>Please read each items carefully and indicate the degree to which you agree with each of the statements.
         </h4>
         </div>
-		<form action="quiz2.html" method="POST" id="mcq1">
+		<form action="quiz1res.php" method="POST" id="mcq1">
             <ol>
                 
                 <!-- cognitive felexibility section Q1 to Q4 -->
@@ -301,7 +301,7 @@ echo "Username: $username";
 
              </ol>
             <div class="btn-container">
-            <input type="submit" value="Next" class="input-btn" onclick="redirect()"/>
+            <input type="submit" value="Next" class="input-btn"/>
             </div>
         </form>
     </div>

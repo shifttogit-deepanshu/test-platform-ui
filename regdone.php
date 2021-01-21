@@ -35,11 +35,11 @@ echo "<a href='index.php' style='font-size:20px;background-color: green;padding:
 
 
 
-$responsetablequery = mysqli_query($connection,"CREATE TABLE $username (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,qid varchar(10),mm varchar(10),response varchar(10))") or die("cant create response table");
+$responsetablequery = mysqli_query($connection,"CREATE TABLE $username (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,question varchar(10),mm varchar(10),response varchar(10))") or die("cant create response table");
 
 
 for($i=1;$i<=148;$i++){
-   mysqli_query($connection,"INSERT INTO $username(qid,mm,response) VALUES ('$i',5,0)");
+   mysqli_query($connection,"INSERT INTO $username(question,mm,response) VALUES ('$i',5,0)");
 }
 
 
