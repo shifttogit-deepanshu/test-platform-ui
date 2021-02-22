@@ -22,12 +22,12 @@
 
 
 
-mysqli_query($connection, "UPDATE $username SET response='$answer1' WHERE question=35");
-mysqli_query($connection, "UPDATE $username SET response='$answer2' WHERE question=36");
-mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE question=37");
-mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE question=38");
-mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE question=39");
-mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE question=40");
+mysqli_query($connection, "UPDATE $username SET response='$answer1' WHERE qid=35");
+mysqli_query($connection, "UPDATE $username SET response='$answer2' WHERE qid=36");
+mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE qid=37");
+mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE qid=38");
+mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE qid=39");
+mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE qid=40");
 
     	$totalScore = 0;
     

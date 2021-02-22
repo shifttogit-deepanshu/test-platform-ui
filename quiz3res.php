@@ -23,14 +23,14 @@
 
 
 
-mysqli_query($connection, "UPDATE $username SET response='$answer1' WHERE question=17");
-mysqli_query($connection, "UPDATE $username SET response='$answer2' WHERE question=18");
-mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE question=19");
-mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE question=20");
-mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE question=21");
-mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE question=22");
-mysqli_query($connection, "UPDATE $username SET response='$answer7' WHERE question=23");
-mysqli_query($connection, "UPDATE $username SET response='$answer8' WHERE question=24");
+mysqli_query($connection, "UPDATE $username SET response='$answer1' WHERE qid=17");
+mysqli_query($connection, "UPDATE $username SET response='$answer2' WHERE qid=18");
+mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE qid=19");
+mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE qid=20");
+mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE qid=21");
+mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE qid=22");
+mysqli_query($connection, "UPDATE $username SET response='$answer7' WHERE qid=23");
+mysqli_query($connection, "UPDATE $username SET response='$answer8' WHERE qid=24");
 
     	$totalScore = 0;
     

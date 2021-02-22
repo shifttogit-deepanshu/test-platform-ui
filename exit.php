@@ -11,50 +11,72 @@ mysqli_query($connection, "UPDATE student_auth SET track=1 WHERE username='$user
 
 $total = 0;
 for($i=1;$i<=148;$i++){
-        $query = mysqli_query($connection,"SELECT * FROM $username WHERE question='$i'");
+        $query = mysqli_query($connection,"SELECT * FROM $username WHERE qid='$i'");
         $assoc = mysqli_fetch_assoc($query);
     if($i==6||$i== 7||$i== 8||$i== 41||$i== 42||$i== 43||$i== 74||$i== 80||$i== 81||$i== 82||$i==101||$i== 102||$i== 103||$i== 104||$i== 105||$i== 106){
         
         if($assoc['response']=="E"){
-            $total = $total + 1;
+            $score=1;
+            $total = $total + $score;
+            mysqli_query($connection, "UPDATE $username SET score='$score' WHERE qid='$i'") or die ("something went wrong with track");
         }
         else if($assoc['response']=="D"){
-            $total = $total + 2;
+            $score=2;
+            $total = $total + $score;
+            mysqli_query($connection, "UPDATE $username SET score='$score' WHERE qid='$i'") or die ("something went wrong with track");
         }
         else if($assoc['response']=="C"){
-            $total = $total + 3;
+            $score=3;
+            $total = $total + $score;
+            mysqli_query($connection, "UPDATE $username SET score='$score' WHERE qid='$i'") or die ("something went wrong with track");
         }
         else if($assoc['response']=="B"){
-            $total = $total + 4;
+            $score=4;
+            $total = $total + $score;
+            mysqli_query($connection, "UPDATE $username SET score='$score' WHERE qid='$i'") or die ("something went wrong with track");
         }
         else if($assoc['response']=="A"){
-            $total = $total + 5;
+            $score=5;
+            $total = $total + $score;
+            mysqli_query($connection, "UPDATE $username SET score='$score' WHERE qid='$i'") or die ("something went wrong with track");
+        }
+        else {
+            mysqli_query($connection, "UPDATE $username SET score=0 WHERE qid='$i'") or die ("something went wrong with track");
         }
     }
     else{
         if($assoc['response']=="A"){
-            $total = $total + 1;
+            $score=1;
+            $total = $total + $score;
+            mysqli_query($connection, "UPDATE $username SET score='$score' WHERE qid='$i'") or die ("something went wrong with track");
         }
         else if($assoc['response']=="B"){
-            $total = $total + 2;
+            $score=2;
+            $total = $total + $score;
+            mysqli_query($connection, "UPDATE $username SET score='$score' WHERE qid='$i'") or die ("something went wrong with track");
         }
         else if($assoc['response']=="C"){
-            $total = $total + 3;
+            $score=3;
+            $total = $total + $score;
+            mysqli_query($connection, "UPDATE $username SET score='$score' WHERE qid='$i'") or die ("something went wrong with track");
         }
         else if($assoc['response']=="D"){
-            $total = $total + 4;
+            $score=4;
+            $total = $total + $score;
+            mysqli_query($connection, "UPDATE $username SET score='$score' WHERE qid='$i'") or die ("something went wrong with track");
         }
         else if($assoc['response']=="E"){
-            $total = $total + 5;
+            $score=5;
+            $total = $total + $score;
+            mysqli_query($connection, "UPDATE $username SET score='$score' WHERE qid='$i'") or die ("something went wrong with track");
+        }
+        else {
+            mysqli_query($connection, "UPDATE $username SET score=0 WHERE qid='$i'") or die ("something went wrong with track");
         }
     }
 }
-echo "your total was";
-echo  $total;
+echo "your have successfully completed the test";
+echo "<a href='endtest.php' style='font-size:20px;background-color: green;padding:20px;margin:200px;color:white'>VIEW SCORES</a>";
 
-// if(session_destroy()) // Destroying All Sessions
-// {
-// header("Location: index.php"); // Redirecting To Home Page
-// }
 
 ?>

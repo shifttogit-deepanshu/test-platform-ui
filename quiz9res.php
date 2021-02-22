@@ -21,11 +21,11 @@
 
 
 
-mysqli_query($connection, "UPDATE $username SET response='$answer1' WHERE question=60");
-mysqli_query($connection, "UPDATE $username SET response='$answer2' WHERE question=61");
-mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE question=62");
-mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE question=63");
-mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE question=64");
+mysqli_query($connection, "UPDATE $username SET response='$answer1' WHERE qid=60");
+mysqli_query($connection, "UPDATE $username SET response='$answer2' WHERE qid=61");
+mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE qid=62");
+mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE qid=63");
+mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE qid=64");
 
 
     	$totalScore = 0;

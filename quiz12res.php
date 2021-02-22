@@ -18,11 +18,11 @@
         require("connect.php");
 
 
-mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE question=83");
-mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE question=84");
-mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE question=85");
-mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE question=86");
-mysqli_query($connection, "UPDATE $username SET response='$answer7' WHERE question=87");
+mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE qid=83");
+mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE qid=84");
+mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE qid=85");
+mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE qid=86");
+mysqli_query($connection, "UPDATE $username SET response='$answer7' WHERE qid=87");
 
 
     	$totalScore = 0;

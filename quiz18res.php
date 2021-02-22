@@ -17,10 +17,10 @@
         require("connect.php");
 
 
-mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE question=135");
-mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE question=136");
-mysqli_query($connection, "UPDATE $username SET response='$answer7' WHERE question=137");
-mysqli_query($connection, "UPDATE $username SET response='$answer8' WHERE question=138");
+mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE qid=135");
+mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE qid=136");
+mysqli_query($connection, "UPDATE $username SET response='$answer7' WHERE qid=137");
+mysqli_query($connection, "UPDATE $username SET response='$answer8' WHERE qid=138");
 
     	$totalScore = 0;
     

@@ -27,18 +27,18 @@
 
 
 
-mysqli_query($connection, "UPDATE $username SET response='$answer1' WHERE question=71");
-mysqli_query($connection, "UPDATE $username SET response='$answer2' WHERE question=72");
-mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE question=73");
-mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE question=74");
-mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE question=75");
-mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE question=76");
-mysqli_query($connection, "UPDATE $username SET response='$answer7' WHERE question=77");
-mysqli_query($connection, "UPDATE $username SET response='$answer8' WHERE question=78");
-mysqli_query($connection, "UPDATE $username SET response='$answer9' WHERE question=79");
-mysqli_query($connection, "UPDATE $username SET response='$answer10' WHERE question=80");
-mysqli_query($connection, "UPDATE $username SET response='$answer11' WHERE question=81");
-mysqli_query($connection, "UPDATE $username SET response='$answer12' WHERE question=82");
+mysqli_query($connection, "UPDATE $username SET response='$answer1' WHERE qid=71");
+mysqli_query($connection, "UPDATE $username SET response='$answer2' WHERE qid=72");
+mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE qid=73");
+mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE qid=74");
+mysqli_query($connection, "UPDATE $username SET response='$answer5' WHERE qid=75");
+mysqli_query($connection, "UPDATE $username SET response='$answer6' WHERE qid=76");
+mysqli_query($connection, "UPDATE $username SET response='$answer7' WHERE qid=77");
+mysqli_query($connection, "UPDATE $username SET response='$answer8' WHERE qid=78");
+mysqli_query($connection, "UPDATE $username SET response='$answer9' WHERE qid=79");
+mysqli_query($connection, "UPDATE $username SET response='$answer10' WHERE qid=80");
+mysqli_query($connection, "UPDATE $username SET response='$answer11' WHERE qid=81");
+mysqli_query($connection, "UPDATE $username SET response='$answer12' WHERE qid=82");
 
     	$totalScore = 0;
     

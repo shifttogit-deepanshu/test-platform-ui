@@ -19,10 +19,10 @@
 
 
 
-mysqli_query($connection, "UPDATE $username SET response='$answer1' WHERE question=25");
-mysqli_query($connection, "UPDATE $username SET response='$answer2' WHERE question=26");
-mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE question=27");
-mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE question=28");
+mysqli_query($connection, "UPDATE $username SET response='$answer1' WHERE qid=25");
+mysqli_query($connection, "UPDATE $username SET response='$answer2' WHERE qid=26");
+mysqli_query($connection, "UPDATE $username SET response='$answer3' WHERE qid=27");
+mysqli_query($connection, "UPDATE $username SET response='$answer4' WHERE qid=28");
 
 
     	$totalScore = 0;
